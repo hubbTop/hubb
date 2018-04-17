@@ -1,0 +1,28 @@
+3194804535数组赋值下拉框
+final String[] labels = { "普通用户","超级用户","vip用户" };
+
+final DefaultComboBoxModel<String> model = new DefaultComboBoxModel<String>(labels);
+
+
+JComboBox<?> group =new JComboBox<>(model);
+
+下拉框选中一项促发的事件
+    conngroup.addActionListener(new ActionListener() {   
+		      public void actionPerformed(ActionEvent e) {
+                        //获得显示文本
+		        String text= (String)((JComboBox<?>)e.getSource()).getSelectedItem();
+		      }   
+		});
+点击事件
+JButton btn_ok = new JButton("确定");
+		btn_ok.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				connOk();
+			}
+		});
+System.getProperty("os.name") 获得系统
+
+ActionListener basebtn.addActionListener(this); 控件受监控
+n
