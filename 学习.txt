@@ -1,0 +1,24 @@
+
+this.getClass().getPackage().getName()//获得全类名
+查询表字段名
+select column_name from information_schema.columns where table_name='action' and  table_schema='public';
+
+hh_user 用户表
+hh_database 数据库表
+hh_namespace 模式表
+hh_tables 表格
+information_schema.columns 列信息
+
+hh_get_userbyid(p.proowner) 根据id查询用户名
+
+obj_description(oid,'hh_class'); 查询对象注释
+
+select *  from hh_constraint  where connamespace='2200' and  conrelid='172391' and conkey
+
+select classid::regclass,objid::regclass::text,refclassid::regclass ,deptype FROM hh_catalog.hh_depend WHERE objid=172382  
+
+//数据库函数信息
+https://www.cnblogs.com/stephen-liu74/archive/2012/05/07/2295273.html
+
+
+学习怎么使用Git
