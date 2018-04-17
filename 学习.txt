@@ -1,21 +1,24 @@
 
-this.getClass().getPackage().getName()//»ñµÃÈ«ÀàÃû
-²éÑ¯±í×Ö¶ÎÃû
+this.getClass().getPackage().getName()//è·å¾—å…¨ç±»å
+æŸ¥è¯¢è¡¨å­—æ®µå
 select column_name from information_schema.columns where table_name='action' and  table_schema='public';
 
-hh_user ÓÃ»§±í
-hh_database Êı¾İ¿â±í
-hh_namespace Ä£Ê½±í
-hh_tables ±í¸ñ
-information_schema.columns ÁĞĞÅÏ¢
+hh_user ç”¨æˆ·è¡¨
+hh_database æ•°æ®åº“è¡¨
+hh_namespace æ¨¡å¼è¡¨
+hh_tables è¡¨æ ¼
+information_schema.columns åˆ—ä¿¡æ¯
 
-hh_get_userbyid(p.proowner) ¸ù¾İid²éÑ¯ÓÃ»§Ãû
+hh_get_userbyid(p.proowner) æ ¹æ®idæŸ¥è¯¢ç”¨æˆ·å
 
-obj_description(oid,'hh_class'); ²éÑ¯¶ÔÏó×¢ÊÍ
+obj_description(oid,'hh_class'); æŸ¥è¯¢å¯¹è±¡æ³¨é‡Š
 
 select *  from hh_constraint  where connamespace='2200' and  conrelid='172391' and conkey
 
 select classid::regclass,objid::regclass::text,refclassid::regclass ,deptype FROM hh_catalog.hh_depend WHERE objid=172382  
 
-//Êı¾İ¿âº¯ÊıĞÅÏ¢
+//æ•°æ®åº“å‡½æ•°ä¿¡æ¯
 https://www.cnblogs.com/stephen-liu74/archive/2012/05/07/2295273.html
+
+
+å­¦ä¹ æ€ä¹ˆä½¿ç”¨Git
